@@ -1,4 +1,4 @@
-import { TrpcProvider } from './lib/trpc'
+import { TrpcProvider } from './lib/trpc-provider'
 import { AllIdeasPage } from './pages/AllIdeasPage'
 
 export const App = () => {
