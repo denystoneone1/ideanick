@@ -17,9 +17,12 @@
     "@trpc/client": "^11.4.3",
     "@trpc/react-query": "^11.4.3",
     "@trpc/tanstack-react-query": "^11.4.3",
+    "include-media": "^2.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.1",
-    "react-router-dom": "^7.7.1"
+    "react-router-dom": "^7.7.1",
+    "reset-css": "^5.0.2",
+    "sass": "^1.89.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
