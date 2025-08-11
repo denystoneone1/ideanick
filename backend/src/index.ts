@@ -1,8 +1,8 @@
 import 'dotenv/config'
 import express, { Request, Response } from 'express'
-import * as trpcExpress from '@trpc/server/adapters/express'
-import { trpcRouter } from 'trpc'
+import { trpcRouter } from './router'
 import cors from 'cors'
+import { applyTrpcToExpressApp } from 'lib/trpc'
 
 const expressApp = express()
 expressApp.use(cors())
@@ -10,12 +10,7 @@ expressApp.get('/ping', (req: Request, res: Response) => {
   res.status(200).send('pong')
 })
 
-expressApp.use(
-  '/trpc',
-  trpcExpress.createExpressMiddleware({
-    router: trpcRouter,
-  })
-)
+applyTrpcToExpressApp(expressApp, trpcRouter)
 
 // Запуск сервера
 const PORT = process.env.PORT || 3000
