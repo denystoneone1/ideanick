@@ -127,6 +127,9 @@ importers:
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
+      scss-reset:
+        specifier: ^1.4.6
+        version: 1.4.6
       stylelint:
         specifier: ^16.23.1
         version: 16.23.1(typescript@5.8.3)
@@ -1908,6 +1911,9 @@ packages:
 
   scheduler@0.26.0:
     resolution: {integrity: sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA==}
+
+  scss-reset@1.4.6:
+    resolution: {integrity: sha512-ioPmXUxVH0NFuNBPs88SolUkUuKYIIQ0CUGssx2yq8m4fuMxGLigjnpXa6JAC2j5w1p66JA33UDd+cKkFJp7yw==}
 
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
@@ -3935,6 +3941,8 @@ snapshots:
       '@parcel/watcher': 2.5.1
 
   scheduler@0.26.0: {}
+
+  scss-reset@1.4.6: {}
 
   semver@6.3.1: {}
 
