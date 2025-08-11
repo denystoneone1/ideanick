@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "types": "tsc --noEmit -project tsconfig.app.json && tsc --noEmit -project tsconfig.node.json && tsc --noEmit -project tsconfig.json",
+    "stylelint": "stylelint --cache --cache-location ./node_modules/.cache/.stylelintcache 'src/**/*.scss'",
     "prettify": "prettier --log-level warn --cache --write \"src/**/*.{ts,tsx,js,json,yml,scss}\""
   },
   "dependencies": {
@@ -34,6 +35,11 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
     "prettier": "^3.6.2",
+    "stylelint": "^16.23.1",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "stylelint-scss": "^6.12.1",
     "typescript-eslint": "^8.35.1",
     "vite": "^7.0.4"
   }
